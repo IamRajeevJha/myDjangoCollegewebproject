@@ -10,5 +10,12 @@ urlpatterns = [
     path('login', views.login, name='login'),
     path('logout', views.logout, name='logout'),
     path('approve', views.approve, name='approve'),
-    path('postnotice', views.postnotice, name='postnotice')
+    path('delete', views.delete, name='delete'),
+    path('edit', views.edit, name='edit'),
+    path('postnotice', views.postnotice, name='postnotice'),
+    path('loginpage', views.index, name='index'),
+    path('postednotice', views.postednotice, name="postednotice"),
+    path('pendingnotice', views.pendingnotice, name="pendingnotice"),
+    path('leavemanagement', views.leave_management, name='leavemanagement'),
+    path('new_notice', views.new_notice, name="new_notice"),
 ]
